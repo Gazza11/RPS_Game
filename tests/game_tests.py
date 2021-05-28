@@ -41,7 +41,3 @@ class TestGame(unittest.TestCase):
 #7
     def test_draw(self):
         self.assertEqual(None, self.game.game_run(self.player4, self.player1))
-
-    # def test_add_players(self):
-    #     self.players.(self.player3, self.player4)
-    #     self.assertEqual(2, len(self.players))

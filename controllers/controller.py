@@ -16,6 +16,9 @@ def game_r_s(input_1, input_2):
     players[1] = Player('Holder2', input_2)
     player1 = Player('Holder1', input_1)
     player2 = Player('Holder2', input_2)
-    # new_players(player1, player2)
     result = Game.game_run(self, player1, player2)
     return render_template('index.html', title='Home', players = players, result=result)
+
+@app.route('/welcome')
+def welcome():
+    return render_template('welcome.html', title='Welcome')

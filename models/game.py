@@ -1,5 +1,15 @@
-from models.player import Player
+class Game:
+    def __init__(self):
+        pass
 
-player1 = Player('Abed', 'scissors')
-player2 = Player('Troy', 'paper')
-player3 = Player('Jeff', 'rock')
+    def game_run(self, player_choice_1, player_choice_2):
+        if player_choice_1.choice == player_choice_2.choice:
+            return None
+        elif player_choice_1.choice == 'rock' and player_choice_2.choice == 'scissors':
+            return f'{player_choice_1.name} wins with {player_choice_1.choice}!'
+        elif player_choice_1.choice == 'scissors' and player_choice_2.choice == 'paper':
+            return f'{player_choice_1.name} wins with {player_choice_1.choice}!'
+        elif player_choice_1.choice == 'paper' and player_choice_2.choice == 'rock':
+            return f'{player_choice_1.name} wins with {player_choice_1.choice}!'
+        else:
+            return f'{player_choice_2.name} wins with {player_choice_2.choice}!'

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section>
+    {% for player in players %}
+    <div>
+        <p>
+            Player: {{player.name}}
+        </p>
+    </div>
+    {% endfor %}
+</section>
+
+{% endblock %}

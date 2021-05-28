@@ -36,6 +36,5 @@ class TestGame(unittest.TestCase):
     def test_rock_beats_scissors__opposite(self):
         self.assertEqual('Jeff wins with rock!', self.game.game_run(self.player1, self.player3))
 
-#7
     def test_draw(self):
         self.assertEqual(None, self.game.game_run(self.player4, self.player1))

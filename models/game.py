@@ -1,7 +1,7 @@
 class Game:
     def __init__(self):
         pass
-
+    
     def game_run(self, player_choice_1, player_choice_2):
         if player_choice_1.choice == player_choice_2.choice:
             return None

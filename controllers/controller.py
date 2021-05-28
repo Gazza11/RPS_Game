@@ -2,15 +2,20 @@ from flask import render_template, request
 from app import app
 from models.game import *
 from models.player import Player
-from models.player_list import players
+from models.player_list import *
+
+self = 'self'
 
 @app.route('/')
 def index():
     return render_template('index.html', title='Home', players=players)
 
-@app.route('/<input1>/<input2>', methods=['POST'])
-def game_r_s(input1, input2):
-    player1 = Player('Holder1', input1)
-    player2 = Player('Holder2', input2)
-    result = Game.game_run(player1, player2)
-    return render_template('index.html', title='game')
+@app.route('/<input_1>/<input_2>', methods=['GET', 'POST'])
+def game_r_s(input_1, input_2):
+    players[0] = Player('Holder1', input_1)
+    players[1] = Player('Holder2', input_2)
+    player1 = Player('Holder1', input_1)
+    player2 = Player('Holder2', input_2)
+    # new_players(player1, player2)
+    result = Game.game_run(self, player1, player2)
+    return render_template('index.html', title='Home', players = players, result=result)

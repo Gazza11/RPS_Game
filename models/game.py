@@ -13,3 +13,10 @@ class Game:
             return f'{player_choice_1.name} wins with {player_choice_1.choice}!'
         else:
             return f'{player_choice_2.name} wins with {player_choice_2.choice}!'
+
+
+    # def new_players(self, player1, player2):
+    #     players = []
+    #     players.append(player1)
+    #     players.append(player2)
+    #     # return players

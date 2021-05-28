@@ -6,3 +6,8 @@ player3 = Player('Jeff', 'rock')
 player4 = Player('Britta', 'scissors')
 
 players = [player1, player2, player3, player4]
+
+def new_players(player1, player2):
+    players = []
+    players.append(player1)
+    players.append(player2)

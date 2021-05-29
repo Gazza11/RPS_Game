@@ -1,0 +1,36 @@
+
+
+.main-header {
+    background-color: #5cdb95;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-container {
+    display:flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right; */
+}
+
+.game-title {
+    color: #05386b;
+    -webkit-text-stroke-color: #022f5c9a;
+    -webkit-text-stroke-width: 1px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.main-header a {
+    color: #edf5e1;
+    text-decoration: none;
+    background: #05386b;
+    display: block;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.main-header li {
+    list-style: none;
+
+}

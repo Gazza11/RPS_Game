@@ -1,18 +1,19 @@
 <html>
     <head>
         <title>{{title}} - RPS Game</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='/main.css') }}">
     </head>
     <body>
-        <header>
-            <h1>Rock-Paper-Scissors Game</h1>
-            <section>
+        <header class="main-header">
+            <h1 class="game-title">Rock-Paper-Scissors Game</h1>
+            <section class="nav-container">
                 <nav>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/play">Play the CPU</a></li>
-                        <li><a href="/rules">Rules</a></li>
+                        <div><li><a href="/welcome">Home</a></li></div>
+                        <li><a href="/play">Play a Friend</a></li>
+                        <li><a href="/play-cpu">Play the CPU</a></li>
+                        <li><a href="/welcome">Rules</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
             </section>

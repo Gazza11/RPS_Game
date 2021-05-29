@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/play-cpu" method="POST">
+    <label for="player1-name">Player one's name:</label>
+    <input type="text" name="player1-name" id="player1-name">
+    <label for="player1-choice">Player one's choice</label>
+    <select name="player1-choice" id="player1-choice">
+        <option value="rock">ROCK</option>
+        <option value="paper">PAPER</option>
+        <option value="scissors">SCISSORS</option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+
+
+{% endblock%}

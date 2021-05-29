@@ -1,36 +1,74 @@
-
+body {
+    margin: 0px;
+    background: #b4dfe5;
+    color: #303c6c;
+}
 
 .main-header {
-    background-color: #5cdb95;
+    background-color: #f4976c;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 .nav-container {
     display:flex;
-    /* flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .game-title {
-    color: #05386b;
-    -webkit-text-stroke-color: #022f5c9a;
-    -webkit-text-stroke-width: 1px;
+    color: #303c6c;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+}
+
+.main-header a { /*This controls the nav links */
+    color: white;
+    text-decoration: none;
+    background: #303c6c;
+    display: block;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 12px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.main-header a {
+.main-header li {
+    list-style: none;
+}
+
+.main-footer h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main-footer li {
+    list-style: none;
+}
+
+.main-footer {
+    background-color:#f4976c;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-footer a {
     color: #edf5e1;
     text-decoration: none;
     background: #05386b;
     display: block;
     border-radius: 5px;
-    margin: 10px;
-}
-
-.main-header li {
-    list-style: none;
-
+    margin: 5px;
+    padding: 12px;
+    font-family: Helvetica, Arial, sans-serif;
 }

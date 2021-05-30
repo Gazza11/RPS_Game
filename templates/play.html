@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<section>
+<section class="play-input">
     <form action="/play" method="POST">
         <label for="player1-name">Player one's name:</label>
         <input type="text" name="player1-name" id="player1-name">
@@ -12,13 +12,22 @@
             <option value="paper">PAPER</option>
             <option value="scissors">SCISSORS</option>
         </select>
+        <br>
+        <br>
         <label for="player2-name">Player two's name:</label>
         <input type="text" name="player2-name" id="player2-name">
+        <label for="player2-choice">Player two's choice</label>
         <select name="player2-choice" id="player2-choice">
             <option value="rock">ROCK</option>
             <option value="paper">PAPER</option>
             <option value="scissors">SCISSORS</option>
         </select>
+        <br>
+        <br>
+        <h4>Let the Battle Commence!!</h4>
+        <p>
+            ...by pressing the button...
+        </p>
         <input type="submit" value="Submit">
     </form>
 </section>

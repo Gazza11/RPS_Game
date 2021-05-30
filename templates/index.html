@@ -12,27 +12,38 @@
             <option value="paper">PAPER</option>
             <option value="scissors">SCISSORS</option>
         </select>
+        <br>
         <label for="player2-name">Player two's name:</label>
         <input type="text" name="player2-name" id="player2-name">
+        <label for="player2-choice">Player two's choice</label>
         <select name="player2-choice" id="player2-choice">
             <option value="rock">ROCK</option>
             <option value="paper">PAPER</option>
             <option value="scissors">SCISSORS</option>
         </select>
+        <br>
+        <br>
         <input type="submit" value="Submit">
     </form>
 </section>
-    <section>
+<section class="result-screen">
+    <section class="player1-result">
         <h2>{{ players[0].name }}'s {{players[0].choice}}</h2>
     </section>
-    <section>
+    <br>
+    <section class="versus">
         <h2>Versus</h2>
     </section>
-    <section>
+    <br>
+    <section class="player2-result">
         <h2>{{ players[1].name }}'s {{players[1].choice}}</h2>
     </section>
-    <section>
+    <br>
+    <section class="result">
         <h2>The Winner is...</h2>
+        <br>   
+        <br>
+        <h2>{{result}}</h2>
     </section>
-    <section>{{result}}</section>
+</section>
 {% endblock %}

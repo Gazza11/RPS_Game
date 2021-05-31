@@ -4,8 +4,6 @@ from models.game import *
 from models.player import Player
 from models.player_list import *
 
-self = 'self'
-
 @app.route('/')
 def index():
     return render_template('welcome.html', title='Home', players=players)
@@ -16,7 +14,8 @@ def game_r_s(input_1, input_2):
     players[1] = Player('Player 2', input_2)
     player1 = Player('Player 1', input_1)
     player2 = Player('Player 2', input_2)
-    result = Game.game_run(self, player1, player2)
+    game = Game()
+    result = game.game_run(player1, player2)
     return render_template('index.html', title='Home', players = players, result=result)
 
 @app.route('/welcome')
@@ -37,7 +36,8 @@ def play():
     players[1] = Player(player2_name, player2_choice)
     player1 = Player(player1_name, player1_choice)
     player2 = Player(player2_name, player2_choice)
-    result = Game.game_run(self, player1, player2)
+    game = Game()
+    result = game.game_run(player1, player2)
     return render_template('index.html', title='play', players=players, result=result)
 
 
@@ -54,5 +54,6 @@ def play_cpu():
     players[1] = computer
     player1 = Player(player1_name, player1_choice)
     player2 = computer
-    result = Game.game_run(self, player1, player2)
+    game = Game()
+    result = game.game_run(player1, player2)
     return render_template('index.html', title='play', players=players, result=result)
